@@ -52,7 +52,7 @@ public class DemoApplication {
 		return "Zumbi";
 	}
 	@GetMapping("/autoglass")
-	String turma(){
+	String autoglass(){
 		return "bem vindo a Autoglas";
 	}
 
