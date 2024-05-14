@@ -153,9 +153,8 @@ jobs:
            run: |
              sh 'src/main/scripts/testesFuncionais.sh'  
   deploy-Prod:
-          runs-on: ubuntu-latest
-    
-          if: github.ref == 'refs/heads/main'
+           runs-on: ubuntu-latest
+           if: github.ref == 'refs/heads/main'
            environment:
              name: prod
            needs: publish
